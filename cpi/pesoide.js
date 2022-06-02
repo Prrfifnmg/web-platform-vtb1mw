@@ -2,7 +2,7 @@ const resultado = document.querySelector('#resultado')
 const imc = document.querySelector('#imc')
 const altura = document.querySelector('#altura')
 
-const calcPI = () => {
+const calPI = () => {
 
   if (imc.value !== '' && altura.value !== '') {
     const pi = (imc.value * (altura.value * altura.value)).toFixed(2)
