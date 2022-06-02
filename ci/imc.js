@@ -8,17 +8,17 @@ const calIMC = () => {
     let classification = '';
 
     if (imc < 18.5) {
-      classification = 'Magreza';
+      classification = 'Magro';
     } else if (imc < 25) {
-      classification = 'Normal';
+      classification = 'Peso Ideal';
     } else if (imc < 30) {
-      classification = 'Sobrepeso';
+      classification = 'Seu Peso está acima da média';
     } else if (imc < 35) {
-      classification = 'Obesidade Grau I';
+      classification = 'Grau de Obesidade I';
     } else if (imc < 40) {
-      classification = 'Obesidade Grau II';
+      classification = 'Grau de Obesidade II';
     } else {
-      classification = 'Obesidade Grau III';
+      classification = 'Grau de Obesidade III';
     }
 
     resultado.innerHTML = `IMC: ${imc} (${classification})`;
